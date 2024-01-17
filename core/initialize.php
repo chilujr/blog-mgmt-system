@@ -1,20 +1,18 @@
 <?php
 
-    defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
-    defined('SITE_ROOT') ? null : define('SITE_ROOT', DS . 'xampp'.DS.'htdocs'.DS.'work'.DS.'blog-mgmt'.DS.'blog-mgmt-system');
+defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
+defined('SITE_ROOT') ? null : define('SITE_ROOT', DS . 'xampp'.DS.'htdocs'.DS.'work'.DS.'blog-mgmt'.DS.'blog-mgmt-system');
 
-    //Defines the paths of all the directories used within the site
-    
-    define('INC_PATH') ? null : define('INC_PATH', SITE_ROOT.DS.'includes');
-    define('CORE_PATH') ? null : define('CORE_PATH', SITE_ROOT.DS.'core');
+//Defines the paths of all the directories used within the site
 
-    //Load the config file
+defined('INC_PATH') ? null : define('INC_PATH', SITE_ROOT.DS.'includes');
+defined('CORE_PATH') ? null : define('CORE_PATH', SITE_ROOT.DS.'core');
 
-    require_once(INC_PATH.DS."config.php");
+//Load the config file
 
-    //Core Classes
+require_once(INC_PATH.DS."config.php");
 
-    require_once(CORE_PATH.DS."post.php");
-    
+//Core Classes
 
+require_once(CORE_PATH.DS."post.php");
 ?>
