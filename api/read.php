@@ -1,0 +1,10 @@
+<?php
+//Headers
+
+header()
+
+
+
+
+
+?>
