@@ -40,32 +40,100 @@
         </header>
 
 
-        <!-- Page content-->
-        <div class="container">
-            <div class="row">
-                <!-- Blog entries-->
-                <div class="col-lg-8">
-
-                    <!-- blog post entry-->
-
-                    <div class="form-group">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h2 class="card-title">What's on your mind?</h2> <br>
-                                    <textarea class="form-control" rows="6" id="blog"></textarea>
-                                    <br>
-                                <a class="btn btn-primary" href="#!">Post →</a> &#160;&#160;
-                                <a class="btn btn-secondary" href="#!">Upload +</a> &#160;&#160;
-                                <a class="btn btn-secondary" href="#!">Update Post</a> &#160;&#160;
-                                <a class="btn btn-danger" href="#!">Delete Post</a>
-                            </div>
-                        </div>
-                    </div>
-                    
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>Blog Management System</title>
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        </head>
+        <body>
+        
+        <div class="container mt-4">
+            <h2>Blog Management System</h2>
+            
+            <!-- Create Post Form -->
+            <form id="createPostForm">
+                <h4>Create Post</h4>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="body" class="form-label">Body</label>
+                    <textarea class="form-control" id="body" name="body" rows="4" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="author" class="form-label">Author</label>
+                    <input type="text" class="form-control" id="author" name="author" required>
+                </div>
+                <div class="mb-3">
+                    <label for="category" class="form-label">Category</label>
+                    <input type="text" class="form-control" id="category" name="category" required>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="createPost()">Create Post</button>
+            </form>
+        
+            <hr>
+        
+            <!-- Read Posts Button -->
+            <h4>Read Posts</h4>
+            <button type="button" class="btn btn-success" onclick="readPosts()">Read Posts</button>
+        
+            <hr>
+        
+            <!-- Update Post Form -->
+            <form id="updatePostForm">
+                <h4>Update Post</h4>
+                <div class="mb-3">
+                    <label for="updateId" class="form-label">Post ID</label>
+                    <input type="number" class="form-control" id="updateId" name="id" required>
+                </div>
+                <div class="mb-3">
+                    <label for="updateTitle" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="updateTitle" name="title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="updateBody" class="form-label">Body</label>
+                    <textarea class="form-control" id="updateBody" name="body" rows="4" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="updateAuthor" class="form-label">Author</label>
+                    <input type="text" class="form-control" id="updateAuthor" name="author" required>
+                </div>
+                <div class="mb-3">
+                    <label for="updateCategory" class="form-label">Category</label>
+                    <input type="text" class="form-control" id="updateCategory" name="category" required>
+                </div>
+                <button type="button" class="btn btn-warning" onclick="updatePost()">Update Post</button>
+            </form>
+        
+            <hr>
+        
+            <!-- Delete Post Form -->
+            <form id="deletePostForm">
+                <h4>Delete Post</h4>
+                <div class="mb-3">
+                    <label for="deleteId" class="form-label">Post ID</label>
+                    <input type="number" class="form-control" id="deleteId" name="id" required>
+                </div>
+                <button type="button" class="btn btn-danger" onclick="deletePost()">Delete Post</button>
+            </form>
+        </div>
+        
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- Your custom JavaScript file -->
+        <script src="js/scripts.js"></script>
+        
+        </body>
+        </html>
+        
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
     </body>
 </html>
