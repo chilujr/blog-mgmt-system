@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Blog Home</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Blog Home</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
 
-    <body>
+<body>
 
 <!-- Responsive navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,7 +24,6 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link"  href="index.html">Post Lists</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="post_details.html">Post Details</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="sign_up.html">Sign Up</a></li>
             </ul>
@@ -32,18 +31,18 @@
     </div>
 </nav>
 
-        <!-- Login Form -->
+<!-- Registration Form -->
 
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        Registration Form
-                    </div>
-                    <div class="card-body">
-                        <!-- Registration Form -->
-                        <form action="includes/register_process.php" method="post" id="registrationForm" class="needs-validation" novalidate>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Registration Form
+                </div>
+                <div class="card-body">
+                    <!-- Registration Form -->
+                    <form action="includes/register_process.php" method="post" id="registrationForm" class="needs-validation" novalidate>
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username:</label>
                                 <input type="text" class="form-control" id="username" name="username" required>
@@ -79,18 +78,18 @@
             </div>
         </div>
     </div>
-
+    
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    
     <!-- Optional: Add client-side validation using Bootstrap's validation classes -->
     <script>
         (function () {
             'use strict';
-
+    
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
             var forms = document.querySelectorAll('.needs-validation');
-
+    
             // Loop over them and prevent submission
             Array.prototype.slice.call(forms)
                 .forEach(function (form) {
@@ -99,14 +98,14 @@
                             event.preventDefault();
                             event.stopPropagation();
                         }
-
+    
                         form.classList.add('was-validated');
                     }, false);
                 });
         })();
     </script>
-
-</body>
-
-</html>
+    
+    </body>
+    
+    </html>
 
